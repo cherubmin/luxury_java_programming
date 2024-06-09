@@ -7,9 +7,9 @@ kitae Hwang
 20 years old
 Department of Computer Engineering
  */
-package first.challenge1;
+package first;
 
-public class MyInfoApp {
+public class Challenge1 {
     public static void main(String[] args) {
         System.out.println("kitae Hwang");
         System.out.println("20 years old");
