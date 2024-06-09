@@ -7,7 +7,7 @@ kitae Hwang
 20 years old
 Department of Computer Engineering
  */
-package first;
+package openchallenge1;
 
 public class Challenge1 {
     public static void main(String[] args) {
