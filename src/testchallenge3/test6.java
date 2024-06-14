@@ -19,10 +19,11 @@ public class test6 {
 
         for (int i = 0; i < unit.length; i++) {
             if (money >= unit[i]) {
-                int money1 = money / unit[i];
-                money = money - unit[i]*money1;
-                System.out.println(unit[i] + "원 짜리 : " + money1 + "개");
+                int count = money / unit[i];
+                money = money - unit[i]*count;
+                System.out.println(unit[i] + "원 짜리 : " + count + "개");
             }
         }
+        sc.close();
     }
 }
