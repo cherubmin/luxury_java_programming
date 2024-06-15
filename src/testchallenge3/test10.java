@@ -4,10 +4,33 @@
 //만들어진 2차원 배열을 화면에 출력하라.
 package testchallenge3;
 
+import java.util.Random;
+
 public class test10 {
     public static void main(String[] args) {
         int arr[][] = new int[4][4];
+        Random rand = new Random();
+        int count = 0;
 
+        //2차원 배열에 1에서 10까지의 정수 10개를 랜덤하게 삽입
+        while (count < 10) {
+            int row = rand.nextInt(4);
+            int col = rand.nextInt(4);
+
+            //배열의 해당 위치가 0이면 랜덤 값을 삽입
+            if (arr[row][col] == 0) {
+                arr[row][col] = rand.nextInt(10) + 1;
+                count++;
+            }
+        }
+
+        // 2차원 배열 출력
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
 
     }
 
